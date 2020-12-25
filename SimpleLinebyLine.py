@@ -17,7 +17,7 @@ for i in range(1,4):
         start_flag = False;
         question_found = ""
         for line in io.StringIO(pages_text):
-            line = line.replace("\n", "").strip()
+            line = line.replace("  \n", "").strip()
             # print(" line {}",line)
             if re.search(start_regex, line):
                 # print("starting found");
