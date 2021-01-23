@@ -14,7 +14,7 @@ for i in range(1,4):
     for i in range(pages):
         pageObj = pdfReader.getPage(i)
         pages_text = pageObj.extractText()
-        start_flag = False;
+        start_flag = False; 
         question_found = ""
         for line in io.StringIO(pages_text):
             line = line.replace("  \n", "").strip()
@@ -41,4 +41,3 @@ for i in range(1,4):
 
                     question_found = ""
                     start_flag = False
-
